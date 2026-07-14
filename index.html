@@ -152,11 +152,12 @@ section{padding:72px 0}
 }
 .ncard:hover{transform:translateY(-5px);box-shadow:0 16px 46px rgba(18,53,36,.18)}
 .ncard .news-img{
-  width:100%;display:block;border-radius:14px 14px 0 0;object-fit:cover;height:220px;
+  width:100%;display:block;border-radius:14px;object-fit:contain;height:auto;
 }
-.ncard .body{padding:18px 20px;background:var(--paper);border-radius:0 0 14px 14px;}
-.ncard .date{font-size:.72rem;color:var(--green-600);font-weight:700;letter-spacing:.05em}
-.ncard h3{font-size:1rem;margin:6px 0 8px;color:var(--green-900)}
+.ncard .body{display:none;}
+.ncard .date{display:none}
+.ncard h3{display:none}
+.ncard p{display:none}
 .ncard p{font-size:.86rem;color:var(--muted);margin:0}
 
 /* ===== Access ===== */
@@ -315,16 +316,13 @@ footer{background:var(--green-900);color:#cfe3d6;padding:50px 0 30px;text-align:
     </div>
     <div class="news-grid">
       <div class="ncard">
-        <img src="image/news01.jpg" alt="漫画コーナー" class="news-img">
-        <div class="body"><span class="date">2026.07.14</span><h3>ホームページを公開しました</h3><p>麻雀東の公式サイトをオープンしました。最新情報はこちらから。</p></div>
+        <img src="image/news01.jpg" alt="お知らせ1" class="news-img">
       </div>
       <div class="ncard">
-        <img src="image/news02.jpg" alt="お知らせ" class="news-img">
-        <div class="body"><span class="date">お知らせ</span><h3>ホームページを公開しました</h3><p>麻雀東の公式サイトの最新情報をお届けします。</p></div>
+        <img src="image/news02.jpg" alt="お知らせ2" class="news-img">
       </div>
       <div class="ncard">
-        <img src="image/news03.jpg" alt="お弁当" class="news-img">
-        <div class="body"><span class="date">お知らせ</span><h3>お弁当のご案内</h3><p>麻雀と一緒に楽しめるお弁当のメニューをご用意しています。</p></div>
+        <img src="image/news03.jpg" alt="お知らせ3" class="news-img">
       </div>
     </div>
   </div>
