@@ -227,13 +227,15 @@ footer{background:var(--green-900);color:#cfe3d6;padding:50px 0 30px;text-align:
 .float-tel{
   position:fixed;left:20px;bottom:20px;z-index:70;
   background:var(--gold);color:var(--green-900);
-  padding:12px 16px;border-radius:50px;font-weight:800;
-  box-shadow:0 10px 30px rgba(18,53,36,.12);display:flex;align-items:center;gap:10px;
-  text-decoration:none;font-size:1rem
+  width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(18,53,36,.12);
+  text-decoration:none;/* hide inline text by default */
 }
-.float-tel .ft-icon{font-size:1.25rem}
+.float-tel .ft-icon{font-size:1.6rem;line-height:1}
+.float-tel .ft-text{display:none}
 .float-tel:hover{transform:translateY(-3px)}
-@media(max-width:420px){.float-tel{left:12px;bottom:12px;padding:10px 12px}}
+@media(max-width:420px){.float-tel{left:12px;bottom:12px;width:48px;height:48px}}
 
 /* ===== Responsive ===== */
 @media(max-width:820px){
