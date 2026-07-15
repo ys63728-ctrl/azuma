@@ -119,7 +119,9 @@ section{padding:72px 0}
 }
 
 /* ===== About ===== */
-.about{background:var(--paper)}
+.about{background:transparent;padding:0}
+.about-full{width:100%;overflow:hidden}
+.about-full-img{width:100%;display:block;height:auto;object-fit:cover}
 .about-grid{
   display:grid;grid-template-columns:1fr;gap:44px;align-items:center;
 }
@@ -315,16 +317,8 @@ footer{background:var(--green-900);color:#cfe3d6;padding:50px 0 30px;text-align:
 
 <!-- About -->
 <section class="about" id="about">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="ey">ABOUT</span>
-      <h2>石垣島で麻雀するなら</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-image">
-        <img src="image/signal-2026-07-15-151310.jpeg" alt="ABOUT" class="about-img">
-      </div>
-    </div>
+  <div class="about-full">
+    <img src="image/signal-2026-07-15-151310.jpeg" alt="ABOUT" class="about-full-img">
   </div>
 </section>
 
