@@ -121,8 +121,10 @@ section{padding:72px 0}
 /* ===== About ===== */
 .about{background:var(--paper)}
 .about-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;
+  display:grid;grid-template-columns:1fr;gap:44px;align-items:center;
 }
+.about-image{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.about-img{width:100%;display:block;height:auto;object-fit:cover}
 .about-text p{margin-bottom:18px;color:var(--muted)}
 .about-text .lead{
   font-family:"Noto Serif JP",serif;font-weight:700;
@@ -319,24 +321,8 @@ footer{background:var(--green-900);color:#cfe3d6;padding:50px 0 30px;text-align:
       <h2>石垣島で麻雀するなら</h2>
     </div>
     <div class="about-grid">
-      <div class="about-text">
-        <p class="lead serif">島の中心・美崎町。<br>ふらっと立ち寄れる、みんなの雀荘。</p>
-        <p>麻雀東は、石垣島ヴィレッジ3階にある麻雀店です。フリーでもセット（仲間内）でも、おひとりでもグループでも大歓迎。旅の途中に、仕事終わりに、気軽にお立ち寄りください。</p>
-        <p>ルールが不安な方もご安心を。初心者の方や観光でお越しのお客様にも、スタッフが丁寧にご案内します。</p>
-      </div>
-      <div class="feature-cards">
-        <div class="fcard">
-          <span class="ic">🀄</span>
-          <div><h3>フリー・セット大歓迎</h3><p>お一人でも、お仲間同士でも。人数や打ち方に合わせて遊べます。</p></div>
-        </div>
-        <div class="fcard">
-          <span class="ic">🔰</span>
-          <div><h3>初心者・観光のお客様も歓迎</h3><p>ルールが分からなくても大丈夫。旅の思い出にどうぞ。</p></div>
-        </div>
-        <div class="fcard">
-          <span class="ic">🕛</span>
-          <div><h3>昼から深夜まで営業</h3><p>12:00〜24:00・年中無休。好きな時間に打てます。</p></div>
-        </div>
+      <div class="about-image">
+        <img src="image/signal-2026-07-15-151310.jpeg" alt="ABOUT" class="about-img">
       </div>
     </div>
   </div>
